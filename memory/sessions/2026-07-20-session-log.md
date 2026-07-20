@@ -161,6 +161,15 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   guard), confirm-guarded remove. Server actions + RLS throughout.
 - Feeds Legal Compliance (28%). Build + smoke verified. **PRS 44/100** (App 8→9); gate holds.
 
+## 14 · Addendum — SafeFile Documents module · PRS 44 → 45
+
+- `/documents`: per-organisation six-module register with full/partial/missing badges
+  (mirrors rubric's 100/50/0 rule; scoring.ts source of truth), document list with
+  validity/lapsed and S.16(1) signed/unsigned state, register form, toggle-signed,
+  confirm-guarded remove. Server actions + RLS. Storage uploads deferred to the
+  SafeFile pipeline build. Feeds Document Completeness (22%).
+- Build + smoke verified. **PRS 45/100** (App 9→10); gate holds.
+
 ## Commit trail (this session)
 
 ```

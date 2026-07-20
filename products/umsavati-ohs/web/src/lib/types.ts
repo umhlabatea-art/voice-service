@@ -53,6 +53,36 @@ export function requiredDesignations(sector: Sector): Designation[] {
   return base;
 }
 
+export const SAFEFILE_MODULES = [
+  'ohs_policy_statement',
+  'risk_assessment_register',
+  'health_safety_file',
+  'emergency_preparedness_plan',
+  'incident_accident_register',
+  'training_induction_records',
+] as const;
+export type SafefileModule = (typeof SAFEFILE_MODULES)[number];
+
+export const SAFEFILE_MODULE_LABELS: Record<SafefileModule, string> = {
+  ohs_policy_statement: 'OHS Policy Statement',
+  risk_assessment_register: 'Risk Assessment Register',
+  health_safety_file: 'Health & Safety File',
+  emergency_preparedness_plan: 'Emergency Preparedness Plan',
+  incident_accident_register: 'Incident & Accident Register',
+  training_induction_records: 'Training & Induction Records',
+};
+
+export interface OhsDocument {
+  id: string;
+  organisation_id: string;
+  module: SafefileModule;
+  title: string;
+  storage_path: string | null;
+  valid_until: string | null;
+  signed_by_16_1: boolean;
+  created_at: string;
+}
+
 export interface Appointment {
   id: string;
   organisation_id: string;
