@@ -5,7 +5,7 @@
 ---
 
 ## Platform Readiness Score (PRS) Gate
-**Current PRS**: `38/100` — 🔴 CRITICAL band · re-scored 2026-07-20 after foundation-schema apply (was 26; see `prs-audit-2026-07-20.md`)  
+**Current PRS**: `40/100` — 🔴 CRITICAL band · updated 2026-07-20 after first Edge Function deploy (26 → 38 → 40; see `prs-audit-2026-07-20.md`)  
 **Gate threshold**: ≥ 85 to unlock new sprint — **Sprint 9 remains GATED**  
 **Critical path to 85**: application surface (product code into version control) → monitoring deploys → first scoring Edge Function
 

@@ -108,6 +108,22 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   deploys, first scoring Edge Function. Full re-score in `prs-audit-2026-07-20.md`.
 - HITL queue is now **empty**; KB updated (roadmap, agents, stack, CLAUDE.md §2.1).
 
+## 10 · Addendum — first Edge Function: `score-organisation` · PRS 38 → 40
+
+- Deployed `score-organisation` v1 to `lpafkclumhhwsvgxrkwv` (ACTIVE, JWT verify on) —
+  first of the 11 documented Edge Functions; the score engine's write path.
+- Design: ownership proven via RLS with the caller's JWT; dimension inputs read and the
+  score row inserted via service role (`compliance_scores` stays select-only → immutable
+  history); `total` + `band` remain DB-generated (weights live in one place).
+- Rubric v1 in a pure module (`scoring.ts`) with **22 passing unit tests** — sector-specific
+  S.16 chains (CR5/SASREA), SafeFile module scoring, S.24 12-month window, CIDB/CR5
+  contractor split, and the deliberate no-data asymmetries (no contractors=100,
+  no training=0, no readings=50). Documented in the function's README.
+- HTTP smoke test blocked by session network policy (`*.supabase.co` unreachable from
+  sandbox); deploy verified via management API + successful bundle build. Live E2E pends
+  first auth user.
+- **PRS 40/100** (App 3→5) — still CRITICAL; Sprint 9 gate holds.
+
 ## Commit trail (this session)
 
 ```
