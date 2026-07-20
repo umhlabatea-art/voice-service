@@ -1,0 +1,24 @@
+{
+  "model": "claude-opus-4-6",
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(uv:*)",
+      "Bash(docker:*)",
+      "Bash(supabase:*)",
+      "Bash(deno:*)",
+      "Read(*)",
+      "Write(*)"
+    ],
+    "deny": []
+  },
+  "env": {
+    "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org",
+    "SUPABASE_PROJECT_REF": "lpafkclumhhwsvgxrkwv",
+    "PYTHON_PACKAGE_MANAGER": "uv"
+  }
+}
