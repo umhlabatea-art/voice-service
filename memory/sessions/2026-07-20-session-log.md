@@ -170,6 +170,15 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   SafeFile pipeline build. Feeds Document Completeness (22%).
 - Build + smoke verified. **PRS 45/100** (App 9→10); gate holds.
 
+## 15 · Addendum — Incidents module · PRS 45 → 46
+
+- `/incidents`: per-organisation reportable-on-time ratio (12-month window,
+  injury/disease reportable set — mirrors rubric's incidentManagement, scoring.ts
+  source of truth), outstanding alert, per-row S.24 on-time/late/unreported/not-reportable
+  badges, tri-state deadline capture (7d injury / 14d disease), COID claim ref,
+  confirm-guarded remove. Server actions + RLS. Feeds Incident Management (18%).
+- Build + smoke verified. **PRS 46/100** (App 10→11); gate holds.
+
 ## Commit trail (this session)
 
 ```

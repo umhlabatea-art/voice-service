@@ -83,6 +83,36 @@ export interface OhsDocument {
   created_at: string;
 }
 
+export const INCIDENT_KINDS = [
+  'injury',
+  'disease',
+  'near_miss',
+  'property_damage',
+] as const;
+export type IncidentKind = (typeof INCIDENT_KINDS)[number];
+
+export const INCIDENT_KIND_LABELS: Record<IncidentKind, string> = {
+  injury: 'Injury',
+  disease: 'Occupational Disease',
+  near_miss: 'Near Miss',
+  property_damage: 'Property Damage',
+};
+
+// S.24-reportable kinds (injury/disease) drive the Incident Management score.
+export const REPORTABLE_KINDS: readonly IncidentKind[] = ['injury', 'disease'];
+
+export interface Incident {
+  id: string;
+  organisation_id: string;
+  kind: IncidentKind;
+  occurred_at: string;
+  description: string;
+  reported_s24: boolean;
+  coid_claim_ref: string | null;
+  reported_within_deadline: boolean | null;
+  created_at: string;
+}
+
 export interface Appointment {
   id: string;
   organisation_id: string;
