@@ -152,6 +152,15 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
 - Fixed: detail page 500 on bare checkout → clean 404 via env guard. Build + smoke
   re-verified. **PRS 43/100** (App 7→8); gate holds. E2E pends first auth user.
 
+## 13 · Addendum — Appointments module · PRS 43 → 44
+
+- `/appointments`: per-organisation S.16 chain coverage (sector-aware required set
+  mirroring `requiredDesignations` in the rubric — noted as display-only mirror with
+  the scoring module as source of truth), appointment list with current/expired/future
+  status, record form (org + designation + appointee + dates, expiry-before-appointment
+  guard), confirm-guarded remove. Server actions + RLS throughout.
+- Feeds Legal Compliance (28%). Build + smoke verified. **PRS 44/100** (App 8→9); gate holds.
+
 ## Commit trail (this session)
 
 ```
