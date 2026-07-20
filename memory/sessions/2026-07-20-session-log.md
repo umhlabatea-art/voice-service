@@ -124,6 +124,23 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   first auth user.
 - **PRS 40/100** (App 3→5) — still CRITICAL; Sprint 9 gate holds.
 
+## 11 · Addendum — Umsavati OS dashboard shell · PRS 40 → 42
+
+- `products/umsavati-ohs/web/`: Next.js 15 App Router (TS strict, Tailwind v4,
+  shadcn/ui conventions), all 11 documented pages as routes, sidebar shell in
+  brand navy/gold, auth skeleton (`@supabase/ssr` login + session middleware).
+- Dashboard home reads `compliance_scores` server-side; `total`/`band` are display-only
+  (arithmetic stays in DB + `score-organisation`). OHS status palette used for band
+  chips, kept separate from brand gold per §4.
+- Tokens: every colour defined once as `--umh-*`/`--ohs-*` in `globals.css`, mapped to
+  Tailwind utilities via `@theme inline`; Fraunces/DM Sans/IBM Plex Mono self-hosted
+  via Fontsource (no runtime font CDN).
+- Verified: `next build` clean (14 routes) after fixing two strict-mode implicit-any
+  cookie types; production smoke test — all routes 200, band chips render, tokens and
+  all three typefaces present in built CSS. Shell builds and runs without env vars
+  (graceful "not connected" states).
+- **PRS 42/100** (App 5→7) — CRITICAL; gate holds.
+
 ## Commit trail (this session)
 
 ```
