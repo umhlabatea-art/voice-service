@@ -44,8 +44,14 @@ Open Blockers:
   - Archon backend on free tier — re-pauses when idle
 
 HITL Queue:
-  - [pending approval] revoke execute on public.rls_auto_enable() from anon/authenticated (security fix, 1 stmt)
-  - [pending approval] popia_consent_ledger migration (design in templates/legal/POPIA_LAWFUL_BASIS_MEMO.md)
+  - [pending approval] apply Umsavati rebuild foundation schema
+    (products/umsavati-ohs/supabase/schema/DRAFT_20260720_umsavati_foundation.sql)
+
+HITL Executed (CEO-approved 2026-07-20):
+  - ✅ revoke_rls_auto_enable_exposure — security lints cleared
+  - ✅ perf_rls_initplan_and_fk_index — performance lints cleared
+  - ✅ create_popia_consent_ledger — append-only verified; D1 adopted
+    (legitimate-interest structure per templates/legal/POPIA_LAWFUL_BASIS_MEMO.md)
 ```
 
 ---

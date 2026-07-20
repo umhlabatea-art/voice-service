@@ -10,7 +10,7 @@
 
 | Service | Role | Host | Status |
 |---------|------|------|--------|
-| Supabase | DB, Auth, Edge Functions, Storage | Cloud | 🟢 Active |
+| Supabase | DB, Auth, Edge Functions, Storage | Cloud | 🟡 Active (restored 2026-07-20 — free tier re-pauses when idle; keep-alive or paid tier needed) |
 | n8n | Workflow automation, ARCHON orchestration | Coolify (KVM2) | 🟢 Active |
 | ChromaDB | Semantic vector memory (ARCHON Layer 3) | Coolify (KVM2) | 🟢 Active |
 | Coolify | Self-hosted PaaS | KVM2 | 🟢 Active |

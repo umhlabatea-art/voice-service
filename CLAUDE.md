@@ -33,6 +33,11 @@ Every output must be:
 ## § 2 — PRODUCT ARCHITECTURE
 
 ### 2.1 Umsavati OHS Platform
+> ⚠️ **TARGET ARCHITECTURE — rebuild in progress.** PRS audit 2026-07-20 confirmed the
+> figures below describe the intended platform, not deployed reality (see
+> `memory/prs-audit-2026-07-20.md`). Rebuild foundation drafted at
+> `products/umsavati-ohs/supabase/schema/`, awaiting HITL to apply.
+
 - **Mobile**: Expo SDK 52 + Supabase
 - **Database**: 25 tables · 66 RLS policies · 14 triggers · 11 Edge Functions
 - **Web Dashboard**: Next.js (Umsavati OS · `umsavati-os.html`) — 11 pages

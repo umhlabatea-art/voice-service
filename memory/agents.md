@@ -55,7 +55,8 @@
 ```
 Layer 1 — Structured DB:   Supabase (lpafkclumhhwsvgxrkwv)
                             - All new schemas: auth.uid()-based RLS
-                            - Empty at last session; clean state
+                            - As of 2026-07-20: sites, floorplans, popia_consent_ledger
+                              (ledger append-only, service-role writes only)
 
 Layer 2 — Narrative KB:    /memory/ (this directory)
                             - Human-readable markdown
