@@ -209,6 +209,17 @@ repo-committed `.claude/` config, not a global install.
 - Note: caveman activates from the **next** session start (hooks fire at SessionStart);
   this session's replies remain normal prose for clarity of the setup report.
 
+## 18 · SafeFile Generator + caveman statusline · PRS 48 → 49
+
+- Statusline: added `statusLine` to repo `.claude/settings.json` (caveman badge `[CAVEMAN]`),
+  script restored to vendored plugin. Smoke-tested.
+- `/safefile` generator: 4-phase pipeline UX, per-org module + S.16 chain readiness badges.
+- `/print/safefile/[id]` (chrome-free print layout + PrintButton client): Health & Safety
+  File assembled from live data — appointment register (VACANT), SafeFile register (MISSING),
+  incident register (S.24/COID), training, latest score band — SA legislative citations,
+  print-to-PDF. Env-guarded. DOCX + Storage upload deferred.
+- Build + smoke verified. **PRS 49/100** (App 13→14); gate holds.
+
 ## Commit trail (this session)
 
 ```

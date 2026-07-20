@@ -23,6 +23,10 @@
     "SUPABASE_PROJECT_REF": "lpafkclumhhwsvgxrkwv",
     "PYTHON_PACKAGE_MANAGER": "uv"
   },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"${CLAUDE_PROJECT_DIR}/.claude/plugins/caveman/src/hooks/caveman-statusline.sh\""
+  },
   "hooks": {
     "SessionStart": [
       {
