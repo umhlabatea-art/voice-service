@@ -1,0 +1,662 @@
+{
+  ".caveman/config.json": {
+    "mtime": 1784566730.9159997,
+    "ast_hash": "f910efeea13b8c3c0eddef7c7d597470",
+    "semantic_hash": ""
+  },
+  ".claude/hooks/graphify-bootstrap.sh": {
+    "mtime": 1784566792.3276274,
+    "ast_hash": "56dda311fdd11481f0c48be061dc11a4",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/.claude-plugin/marketplace.json": {
+    "mtime": 1784566723.0182877,
+    "ast_hash": "073947344577791495c155fe96748174",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/.claude-plugin/plugin.json": {
+    "mtime": 1784566723.0183303,
+    "ast_hash": "4bf439426336bec83ed3dda95adad074",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/__init__.py": {
+    "mtime": 1784566723.0263479,
+    "ast_hash": "4bfea67395a7ba04f363df51355d1ef8",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/__main__.py": {
+    "mtime": 1784566723.0263743,
+    "ast_hash": "746aff14c3a098a28fe9d01d54f174a9",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/benchmark.py": {
+    "mtime": 1784566723.0263946,
+    "ast_hash": "b4a8fd8070777a15f1f183d7c9992dcd",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/cli.py": {
+    "mtime": 1784566723.0264142,
+    "ast_hash": "993604200cad4bb12bdb2efcdb45fcf5",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/compress.py": {
+    "mtime": 1784566723.026436,
+    "ast_hash": "3ba8e48116e0a534d997f40e2da7f241",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/detect.py": {
+    "mtime": 1784566723.0265305,
+    "ast_hash": "ebe1feccb3cfc6ec45cbf87951ac863d",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/scripts/validate.py": {
+    "mtime": 1784566723.0265553,
+    "ast_hash": "b4f283bc53e5d352fb0120827fd4fafa",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/cavecrew-model-overrides.js": {
+    "mtime": 1784566723.0207624,
+    "ast_hash": "ea2e79b6b4387ca411f19f3ad5357c89",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/caveman-activate.js": {
+    "mtime": 1784566723.0207822,
+    "ast_hash": "06b30b1d553e40dddf3a055d8b0b1694",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/caveman-config.js": {
+    "mtime": 1784566723.0208046,
+    "ast_hash": "846b28ec3728efe73ff2f2738c61ff02",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/caveman-mode-tracker.js": {
+    "mtime": 1784566723.0208313,
+    "ast_hash": "926a7a71360d9b5d361049bd4cf07281",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/caveman-stats.js": {
+    "mtime": 1784566723.0208557,
+    "ast_hash": "321a4e644dcb363a5ee3d390b1a54487",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/package.json": {
+    "mtime": 1784566723.0213475,
+    "ast_hash": "df9ffc6aa3f78a5491736d441c4258a8",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/mcp-servers/caveman-shrink/compress.js": {
+    "mtime": 1784566723.0217195,
+    "ast_hash": "47c672d072d39cd1eb6366fe90291c12",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/mcp-servers/caveman-shrink/index.js": {
+    "mtime": 1784566723.0217435,
+    "ast_hash": "c69b7fa1a5e9455f114a1e414d5eb1e7",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/mcp-servers/caveman-shrink/package.json": {
+    "mtime": 1784566723.021765,
+    "ast_hash": "039197a918269b573e9191953e1d9ec4",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/mcp-servers/caveman-shrink/spawn-options.js": {
+    "mtime": 1784566723.021784,
+    "ast_hash": "92754461d0a508e99eeb7e1b0ebb94a6",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/tools/caveman-init.js": {
+    "mtime": 1784566723.02263,
+    "ast_hash": "720267cd935f07b39649227edd7f7f19",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1784566817.991997,
+    "ast_hash": "3a8e3894abc3d21d0e8fa3bebdbedf6e",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1784566791.955998,
+    "ast_hash": "6a785080c8d6a8d5c97717f1e000f927",
+    "semantic_hash": ""
+  },
+  "agents/archon/migrations/20260720_01_revoke_rls_auto_enable_exposure.sql": {
+    "mtime": 1784509128.1550446,
+    "ast_hash": "03689a3ac23afe6718f5f7a48a9c49b8",
+    "semantic_hash": ""
+  },
+  "agents/archon/migrations/20260720_02_perf_rls_initplan_and_fk_index.sql": {
+    "mtime": 1784509131.9710448,
+    "ast_hash": "721c5cad19beef956dbd2cdad4759786",
+    "semantic_hash": ""
+  },
+  "agents/archon/migrations/20260720_03_create_popia_consent_ledger.sql": {
+    "mtime": 1784509139.2590451,
+    "ast_hash": "80365df1d77e1fc6f0bb9da9c0b097f4",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/supabase/functions/score-organisation/index.ts": {
+    "mtime": 1784510277.0511127,
+    "ast_hash": "3f519ab5a4094190c07e9b96cfb4aa15",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/supabase/functions/score-organisation/scoring.test.mjs": {
+    "mtime": 1784510459.1099155,
+    "ast_hash": "bb82c8e9c6df137379e498d2f4f2d92e",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/supabase/functions/score-organisation/scoring.ts": {
+    "mtime": 1784510260.4751117,
+    "ast_hash": "1105d10ebbc4c5313ee011dd8b624cef",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/supabase/schema/20260720_umsavati_foundation.sql": {
+    "mtime": 1784510010.3710968,
+    "ast_hash": "6005bf8c39619ea6748db0b592b8dff0",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/next.config.ts": {
+    "mtime": 1784510668.715136,
+    "ast_hash": "3921ec810fe855174bf481cf23f86516",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/package.json": {
+    "mtime": 1784510664.9511359,
+    "ast_hash": "1dc7648b727d64eb8df87b406bb10221",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/postcss.config.mjs": {
+    "mtime": 1784510670.139136,
+    "ast_hash": "9a944fbda06979be39571bd9bd00b0d9",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/appointments/actions.ts": {
+    "mtime": 1784511728.239199,
+    "ast_hash": "8f866e7a1455d9b362c069e20d5956b9",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/appointments/appointment-form.tsx": {
+    "mtime": 1784511737.9871995,
+    "ast_hash": "f5a0d18c49be1723aa749b3f000abf9d",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/appointments/page.tsx": {
+    "mtime": 1784541773.8501604,
+    "ast_hash": "6405fb753584efdd3b613136cdc939bb",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/archon/page.tsx": {
+    "mtime": 1784510780.7134173,
+    "ast_hash": "9f3bc4821b79af2408e7a72e0b50e5e8",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/contractors/actions.ts": {
+    "mtime": 1784565219.4529603,
+    "ast_hash": "b1a01387370e80bede9ec64661306c24",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/contractors/contractor-form.tsx": {
+    "mtime": 1784565229.98096,
+    "ast_hash": "88f99361519a72a8e64a5b2aff8643c8",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/contractors/page.tsx": {
+    "mtime": 1784565272.0609586,
+    "ast_hash": "79669852063602fa618e060e38d52a8e",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/documents/actions.ts": {
+    "mtime": 1784552961.0753365,
+    "ast_hash": "c0b6f0721d86eda9facd6559a5a4bd66",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/documents/document-form.tsx": {
+    "mtime": 1784552975.031337,
+    "ast_hash": "d3adbe36f506071d796722f592b3103e",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/documents/page.tsx": {
+    "mtime": 1784553002.4193382,
+    "ast_hash": "5af6a3f1d3ddd3c776604678e72cad61",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/incidents/actions.ts": {
+    "mtime": 1784565041.7769654,
+    "ast_hash": "d657cec98c4279dcd21d3a77e37c1c24",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/incidents/incident-form.tsx": {
+    "mtime": 1784565059.5769649,
+    "ast_hash": "37cbde20cd3d9d846c24d2195010b7ba",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/incidents/page.tsx": {
+    "mtime": 1784565111.0369635,
+    "ast_hash": "5b09fe719fe885f99a8f23c723e3da68",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/layout.tsx": {
+    "mtime": 1784510744.9991405,
+    "ast_hash": "ef88d6ef5db0f1306571f6b263c11ac9",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/organisations/[id]/page.tsx": {
+    "mtime": 1784511155.947165,
+    "ast_hash": "53d8178f3cdbd69ac01a94d2fa93f65a",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/organisations/actions.ts": {
+    "mtime": 1784511053.7391589,
+    "ast_hash": "a7dfba0931629014c38397ec307e5cf7",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/organisations/org-form.tsx": {
+    "mtime": 1784511066.1271596,
+    "ast_hash": "0832384b4213112918d4bf397f77ec17",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/organisations/page.tsx": {
+    "mtime": 1784511116.3031626,
+    "ast_hash": "7e47af2f56248d07f779e08942e9c5c4",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/organisations/scan-and-delete.tsx": {
+    "mtime": 1784511070.7751598,
+    "ast_hash": "2115fe3255e53edfa7c2a2d3e3fb158e",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/page.tsx": {
+    "mtime": 1784510758.1631413,
+    "ast_hash": "f12b1204c4fe4f9fd8053d849b31ce49",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/physical-agents/actions.ts": {
+    "mtime": 1784565340.0689566,
+    "ast_hash": "5ad70df91c04ded02ec4bd05c496d18b",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/physical-agents/page.tsx": {
+    "mtime": 1784565373.7089555,
+    "ast_hash": "7ab837be4fad30b6ce3e00a126a6c7c9",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/physical-agents/reading-form.tsx": {
+    "mtime": 1784565351.1689563,
+    "ast_hash": "ab1a80f467e0f4222c0c04220bddc3b4",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/safefile/page.tsx": {
+    "mtime": 1784510780.708801,
+    "ast_hash": "3b1ea447ee5c82687590e1f5decaf2ee",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/settings/page.tsx": {
+    "mtime": 1784510780.6861274,
+    "ast_hash": "5771a634182cc3be44e4e71d28096881",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/training/actions.ts": {
+    "mtime": 1784565280.0129583,
+    "ast_hash": "131dd0cfa968bec40b0850deb6290d76",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/training/page.tsx": {
+    "mtime": 1784565330.360957,
+    "ast_hash": "764f08eedbe9cf6bdfb5849f3ef904ff",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/(dashboard)/training/training-form.tsx": {
+    "mtime": 1784565289.368958,
+    "ast_hash": "a4e638cb4596c36123c7ec472ecac864",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/layout.tsx": {
+    "mtime": 1784510740.2951403,
+    "ast_hash": "ede5acb696ed1c88cdb6f7e7020fddf1",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/app/login/page.tsx": {
+    "mtime": 1784510769.787142,
+    "ast_hash": "9764edb9d0070406240bd3f53da75538",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/page-placeholder.tsx": {
+    "mtime": 1784510732.78714,
+    "ast_hash": "a16d60ab62aa52c46915c8169018e2dc",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/score-band.tsx": {
+    "mtime": 1784510721.183139,
+    "ast_hash": "e2bdaad008af1229ebe9fd71bb8e6125",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/sidebar-nav.tsx": {
+    "mtime": 1784510727.8311396,
+    "ast_hash": "d65d844ca75f2284ae0ce5f5e298bc72",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/ui/badge.tsx": {
+    "mtime": 1784510713.6671388,
+    "ast_hash": "7e18bdf960000622ef9b5fb815a43ccc",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/ui/button.tsx": {
+    "mtime": 1784510706.0631382,
+    "ast_hash": "2552a1973ebddf08cd524bf6ea4c75eb",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/components/ui/card.tsx": {
+    "mtime": 1784510710.4511385,
+    "ast_hash": "5cbf9248ce5974fd748fdcdd0b304e05",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/lib/supabase/client.ts": {
+    "mtime": 1784510689.0551372,
+    "ast_hash": "61995316f881bc316f53dae9444aeba0",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/lib/supabase/server.ts": {
+    "mtime": 1784510832.1831458,
+    "ast_hash": "e94516920e4127f6894bda467f1e50c3",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/lib/types.ts": {
+    "mtime": 1784565210.8489604,
+    "ast_hash": "48a34f0f91cef2c07060e0aea5db0a36",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/lib/utils.ts": {
+    "mtime": 1784510686.2231371,
+    "ast_hash": "2d01b535f0be7422af24560c9f31c327",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/src/middleware.ts": {
+    "mtime": 1784510837.647146,
+    "ast_hash": "dafd0313551dd6580242c5e799c1d41b",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/tsconfig.json": {
+    "mtime": 1784510667.959136,
+    "ast_hash": "6ac3edfc84fdba99c8337828ca0fd3ed",
+    "semantic_hash": ""
+  },
+  ".claude/commands/BLUEPRINT.md": {
+    "mtime": 1784506788.9707627,
+    "ast_hash": "be9d2d215e7c074b5069d9441e835869",
+    "semantic_hash": ""
+  },
+  ".claude/commands/INSIGHT.md": {
+    "mtime": 1784506788.970901,
+    "ast_hash": "7843fd82180c2264e70f03bd9ce307af",
+    "semantic_hash": ""
+  },
+  ".claude/commands/L99.md": {
+    "mtime": 1784506788.9710166,
+    "ast_hash": "7bd25ad2192569b8537b4dbc6c266238",
+    "semantic_hash": ""
+  },
+  ".claude/commands/RISK.md": {
+    "mtime": 1784506788.9712276,
+    "ast_hash": "2a8664d7c8f8bc08b700937a5f18daa3",
+    "semantic_hash": ""
+  },
+  ".claude/commands/SCORE.md": {
+    "mtime": 1784506788.9713671,
+    "ast_hash": "221a89b9fa7e2673cbbd22f3891ccc19",
+    "semantic_hash": ""
+  },
+  ".claude/commands/SPRINT.md": {
+    "mtime": 1784506788.9714825,
+    "ast_hash": "9945e4b8baea23991320f2560c847929",
+    "semantic_hash": ""
+  },
+  ".claude/commands/XRAY.md": {
+    "mtime": 1784506788.9715927,
+    "ast_hash": "649ea23e4ab81d04d6116b794c8c9f83",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/AGENTS.md": {
+    "mtime": 1784566723.0321538,
+    "ast_hash": "3ca89c7ba485249d74425eba474aa2ff",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/commands/caveman-commit.md": {
+    "mtime": 1784566723.0296524,
+    "ast_hash": "d8ba555db1767eaab46497a652543092",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/commands/caveman-init.md": {
+    "mtime": 1784566723.0297096,
+    "ast_hash": "88efdbabe5185493969579dcabe03b7e",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/commands/caveman-review.md": {
+    "mtime": 1784566723.0297503,
+    "ast_hash": "9a8ed79d558aec62c45c08db97c43bf8",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/commands/caveman-stats.md": {
+    "mtime": 1784566723.0297885,
+    "ast_hash": "7047e9ec108dfd0410a53c6a3eca5dd8",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/commands/caveman.md": {
+    "mtime": 1784566723.0298257,
+    "ast_hash": "ac5febec46197136d2091e43dc3d7327",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/cavecrew/README.md": {
+    "mtime": 1784566723.025612,
+    "ast_hash": "31826d02cff90536871a308040ec4eb7",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/cavecrew/SKILL.md": {
+    "mtime": 1784566723.0256379,
+    "ast_hash": "f184873cd9c507fa872cc86fd36722e3",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-commit/README.md": {
+    "mtime": 1784566723.026057,
+    "ast_hash": "15f57347c5b5449b79fdf24fdab21f31",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-commit/SKILL.md": {
+    "mtime": 1784566723.0261242,
+    "ast_hash": "1262c2156cd81379fc011d538728079d",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/README.md": {
+    "mtime": 1784566723.026221,
+    "ast_hash": "3bda4de7432953bceb7f230da97f2c12",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/SECURITY.md": {
+    "mtime": 1784566723.0262532,
+    "ast_hash": "ab7d04be07bb9b8e851fb2758040432b",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-compress/SKILL.md": {
+    "mtime": 1784566723.0262718,
+    "ast_hash": "7f0c9f11595a612a536954c6be767910",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-help/README.md": {
+    "mtime": 1784566723.026617,
+    "ast_hash": "9c9cf8de78df2a8831c57d6bc88d942b",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-help/SKILL.md": {
+    "mtime": 1784566723.0266438,
+    "ast_hash": "5dae4d1aebe90b61b0024f037a991bbf",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-review/README.md": {
+    "mtime": 1784566723.0266817,
+    "ast_hash": "ae3bdc81125037690fc50504e2917c83",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-review/SKILL.md": {
+    "mtime": 1784566723.0267062,
+    "ast_hash": "fbb47ffb83198a1ed37a453417e691e2",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-stats/README.md": {
+    "mtime": 1784566723.026744,
+    "ast_hash": "ad1001beaabf7ab16a0113b2efc8b720",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman-stats/SKILL.md": {
+    "mtime": 1784566723.0267692,
+    "ast_hash": "5c195635a9349369df34699f8d3b3445",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman/README.md": {
+    "mtime": 1784566723.026808,
+    "ast_hash": "273a25110a7bb5681f488c17417986ce",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/skills/caveman/SKILL.md": {
+    "mtime": 1784566723.026834,
+    "ast_hash": "b947774b88d414637bff02071c65dc9b",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/hooks/README.md": {
+    "mtime": 1784566723.0207322,
+    "ast_hash": "fcfcdfc1fffb900dd63c1fe1f37344ec",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/mcp-servers/caveman-shrink/README.md": {
+    "mtime": 1784566723.0216906,
+    "ast_hash": "1921ee184b0f14ad284b6ae281f5f5dd",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/rules/caveman-activate.md": {
+    "mtime": 1784566723.0223186,
+    "ast_hash": "b1cdbe1b6654ab792a3744966034dcf7",
+    "semantic_hash": ""
+  },
+  ".claude/plugins/caveman/src/rules/caveman-openclaw-bootstrap.md": {
+    "mtime": 1784566723.022573,
+    "ast_hash": "3f6000f27c0c85a2f3dc4ee4459db1e3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1784566762.916768,
+    "ast_hash": "676310b3fa55aacdb350515228c8b0ec",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1784566762.9167395,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1784566762.9161432,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1784566762.9162061,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1784566762.9163508,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1784566762.9161818,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1784566762.916614,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1784566762.916233,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1784566762.9163084,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784510040.1350987,
+    "ast_hash": "5ae80814f24ab23194f08308074ac2ab",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784506788.9647217,
+    "ast_hash": "e685ce2b2df8f800fb00e523e384a6e0",
+    "semantic_hash": ""
+  },
+  "infra/docker/glitchtip.compose.yml": {
+    "mtime": 1784508068.6549814,
+    "ast_hash": "899d52b1ef33aa804977856e14f4b5f0",
+    "semantic_hash": ""
+  },
+  "infra/docker/uptime-kuma.compose.yml": {
+    "mtime": 1784508056.8669808,
+    "ast_hash": "4b438eaa949c574f9573c8cef9f0e99f",
+    "semantic_hash": ""
+  },
+  "memory/agents.md": {
+    "mtime": 1784510026.4830978,
+    "ast_hash": "dcc881b1fb6ee2e6a66ec56166017100",
+    "semantic_hash": ""
+  },
+  "memory/brand.md": {
+    "mtime": 1784506788.973764,
+    "ast_hash": "d5a53c657ed9e6546b75fee070a7cf69",
+    "semantic_hash": ""
+  },
+  "memory/growth.md": {
+    "mtime": 1784506788.97387,
+    "ast_hash": "9bce5056d69622e20a7c5543db6b34df",
+    "semantic_hash": ""
+  },
+  "memory/legislation.md": {
+    "mtime": 1784506788.9740694,
+    "ast_hash": "b13c19d167b3de53e2ce3c91ce4c6bf2",
+    "semantic_hash": ""
+  },
+  "memory/prs-audit-2026-07-20.md": {
+    "mtime": 1784565424.5889542,
+    "ast_hash": "3db2a020016277bf04dbb7f4e96a5813",
+    "semantic_hash": ""
+  },
+  "memory/roadmap.md": {
+    "mtime": 1784565418.2689543,
+    "ast_hash": "6f784a6008cf382b9af1a3cc7daeaca4",
+    "semantic_hash": ""
+  },
+  "memory/sessions/2026-07-20-session-log.md": {
+    "mtime": 1784565428.532954,
+    "ast_hash": "05223ade412628b0a43ee9d4f5736530",
+    "semantic_hash": ""
+  },
+  "memory/stack.md": {
+    "mtime": 1784510030.263098,
+    "ast_hash": "d20172f57a6435126cf7ae333078c102",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/supabase/functions/score-organisation/README.md": {
+    "mtime": 1784510333.471116,
+    "ast_hash": "9b677c4876752e887981f05453f3705e",
+    "semantic_hash": ""
+  },
+  "products/umsavati-ohs/web/README.md": {
+    "mtime": 1784565435.3809538,
+    "ast_hash": "2d8eb704779ad98cd8c9178fef883b3b",
+    "semantic_hash": ""
+  },
+  "templates/legal/POPIA_LAWFUL_BASIS_MEMO.md": {
+    "mtime": 1784508103.6349835,
+    "ast_hash": "e7ffda948ee2574d769aaedf4edb84d8",
+    "semantic_hash": ""
+  }
+}

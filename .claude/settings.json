@@ -7,10 +7,12 @@
       "Bash(npx:*)",
       "Bash(node:*)",
       "Bash(python:*)",
+      "Bash(pip:*)",
       "Bash(uv:*)",
       "Bash(docker:*)",
       "Bash(supabase:*)",
       "Bash(deno:*)",
+      "Bash(graphify:*)",
       "Read(*)",
       "Write(*)"
     ],
@@ -20,5 +22,37 @@
     "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org",
     "SUPABASE_PROJECT_REF": "lpafkclumhhwsvgxrkwv",
     "PYTHON_PACKAGE_MANAGER": "uv"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/plugins/caveman/src/hooks/caveman-activate.js\"",
+            "timeout": 10,
+            "statusMessage": "Loading caveman mode..."
+          },
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PROJECT_DIR}/.claude/hooks/graphify-bootstrap.sh\"",
+            "timeout": 15,
+            "statusMessage": "Ensuring graphify is installed..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/plugins/caveman/src/hooks/caveman-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking caveman mode..."
+          }
+        ]
+      }
+    ]
   }
 }

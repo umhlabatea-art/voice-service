@@ -66,6 +66,17 @@ NPM_CONFIG_REGISTRY=https://registry.npmjs.org
 
 ---
 
+## Default Dev Tooling (repo-committed, loads every session)
+
+| Tool | Role | Default | Source |
+|------|------|---------|--------|
+| caveman | Compressed agent output (~65% fewer output tokens; code/commands/errors kept exact) | 🟢 ON (`full`) | vendored `.claude/plugins/caveman/`, config `.caveman/config.json` |
+| graphify (`graphifyy`) | Codebase → knowledge graph (`graphify-out/GRAPH_REPORT.md`) | 🟢 installed on session start (backgrounded pip) | skill `.claude/skills/graphify/`, hook `.claude/hooks/graphify-bootstrap.sh` |
+
+Wired via `.claude/settings.json` hooks (SessionStart + UserPromptSubmit). See
+root `AGENTS.md` and `CLAUDE.md §11`. Ephemeral container → graphify pip package
+reinstalls per fresh session (non-blocking); caveman fully vendored, no network.
+
 ## Python Convention
 ```bash
 # Always use uv

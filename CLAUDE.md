@@ -255,6 +255,21 @@ npm config set registry https://registry.npmjs.org
 
 ---
 
+## § 11 — DEFAULT DEV TOOLING (auto-loaded every session)
+
+Installed into the repo (`.claude/`) and loaded on session start; see `AGENTS.md`.
+
+| Tool | What | Default | Where |
+|------|------|---------|-------|
+| **caveman** | Compressed output mode — drops filler, keeps code/commands/errors exact | **ON** (`full`) | `.claude/plugins/caveman/`, config `.caveman/config.json` |
+| **graphify** | Codebase → queryable knowledge graph (`graphify-out/GRAPH_REPORT.md`) | Installed on session start (pip `graphifyy`), skill available | `.claude/skills/graphify/`, hook `.claude/hooks/graphify-bootstrap.sh` |
+
+- caveman: switch level `/caveman lite|full|ultra`; disable with "stop caveman".
+- graphify: consult `graphify-out/GRAPH_REPORT.md` before architecture questions; run `graphify update .` after code changes (AST-only, no API cost).
+- Ephemeral-container note: the graphify pip package reinstalls per fresh session (backgrounded, non-blocking); caveman is fully vendored so it needs no network.
+
+---
+
 ## § 10 — SESSION RULES (NON-NEGOTIABLE)
 
 1. Never conflate **UMHLABATEA** (company) with **Umsavati OHS** (product)
@@ -267,3 +282,4 @@ npm config set registry https://registry.npmjs.org
 8. POPIA compliance is non-negotiable on all outreach and data collection
 9. Read `/memory/roadmap.md` before any sprint-related task
 10. All CSS custom properties use `--umh-` prefix
+11. Default dev tooling loads every session (§ 11): caveman ON, graphify available

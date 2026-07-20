@@ -1,3 +1,13 @@
 .env
 node_modules/
 __pycache__/
+
+# graphify — commit GRAPH_REPORT.md + manifest.json (light, durable); the
+# heavy interactive/GraphRAG artifacts and semantic cache are regenerable
+# per-session via `graphify update .`, so keep them out of git.
+graphify-out/cache/
+graphify-out/graph.html
+graphify-out/graph.json
+
+# caveman — runtime flag/state lives in the user config dir, but guard anyway
+.caveman-active

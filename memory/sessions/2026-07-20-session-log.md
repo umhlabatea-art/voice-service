@@ -189,6 +189,26 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
 - Completes the scoring-input set — **all six dimensions now user-drivable**. Build +
   smoke verified across all three. **PRS 48/100** (App 11→13); gate holds.
 
+## 17 · Default dev tooling installed — caveman + graphify (committed to repo)
+
+CEO uploaded two Claude Code extensions, chose **commit-to-voice-service** (durable)
+and **caveman ON by default**. Because the remote container is ephemeral, durability =
+repo-committed `.claude/` config, not a global install.
+
+- **caveman** (`.claude/plugins/caveman/`, functional subset — no assets/benchmarks/
+  translations): compressed output mode. ON via `.caveman/config.json` `defaultMode: full`
+  + SessionStart hook (`caveman-activate.js`) and UserPromptSubmit hook
+  (`caveman-mode-tracker.js`) wired in `.claude/settings.json`. Both hooks smoke-tested.
+- **graphify** (`graphifyy` pip pkg): skill vendored at `.claude/skills/graphify/`;
+  SessionStart bootstrap (`.claude/hooks/graphify-bootstrap.sh`) installs the CLI
+  backgrounded/non-blocking/idempotent. Built the repo graph — 874 nodes, 1277 edges,
+  74 communities; committed light artifacts (`graphify-out/GRAPH_REPORT.md`, manifest),
+  gitignored heavy regenerable ones (graph.html/json, cache).
+- Docs: root `AGENTS.md` (graphify + caveman rules), `CLAUDE.md §11` + session rule 11,
+  `memory/stack.md`. settings.json merged (kept model/permissions/env; added pip + graphify perms).
+- Note: caveman activates from the **next** session start (hooks fire at SessionStart);
+  this session's replies remain normal prose for clarity of the setup report.
+
 ## Commit trail (this session)
 
 ```
