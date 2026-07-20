@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* ── UMHLABATEA locked brand tokens (CLAUDE.md §4, April 2026) ─────────────
+   --umh-* is the single source of truth. The OHS status palette is scored
+   output only — never mixed with brand gold. */
+:root {
+  --umh-navy: #0d1b2a;
+  --umh-gold: #c9a84c;
+  --umh-bone: #fcfbf8;
+  --umh-steel: #5c6b7a;
+
+  /* legacy (Umsavati OS dashboard) */
+  --umh-forest: #2a3d2e;
+  --umh-cream: #faf6ef;
+  --umh-legacy-gold: #c4903a;
+
+  /* OHS compliance status palette */
+  --ohs-compliant: #2d6a4f;
+  --ohs-conditional: #e9c46a;
+  --ohs-non-compliant: #e76f51;
+  --ohs-critical: #c1121f;
+}
+
+/* Expose tokens to Tailwind utilities (bg-navy, text-gold, border-steel,
+   bg-ohs-critical, …) without duplicating a single hex value. */
+@theme inline {
+  --color-navy: var(--umh-navy);
+  --color-gold: var(--umh-gold);
+  --color-bone: var(--umh-bone);
+  --color-steel: var(--umh-steel);
+  --color-forest: var(--umh-forest);
+  --color-cream: var(--umh-cream);
+  --color-legacy-gold: var(--umh-legacy-gold);
+  --color-ohs-compliant: var(--ohs-compliant);
+  --color-ohs-conditional: var(--ohs-conditional);
+  --color-ohs-non-compliant: var(--ohs-non-compliant);
+  --color-ohs-critical: var(--ohs-critical);
+
+  --font-display: 'Fraunces Variable', georgia, serif;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+body {
+  background: var(--umh-bone);
+  color: var(--umh-navy);
+}

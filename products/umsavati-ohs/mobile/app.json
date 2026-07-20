@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Umsavati OHS",
+    "slug": "umsavati-ohs",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "umsavati",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0D1B2A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "za.co.umhlabatea.umsavati"
+    },
+    "android": {
+      "package": "za.co.umhlabatea.umsavati",
+      "adaptiveIcon": {
+        "backgroundColor": "#0D1B2A"
+      }
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
