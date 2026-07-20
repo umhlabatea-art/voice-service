@@ -188,3 +188,14 @@ caveman: `/caveman lite|full|ultra`, or "stop caveman". graphify: consult `graph
 7. POPIA non-negotiable on all outreach and data collection
 8. Read `/memory/roadmap.md` before any sprint-related task
 9. Default dev tooling loads every session (§11): caveman ON, graphify available
+
+## § 12 — TOKEN & COMPUTE DISCIPLINE
+
+Compute = tokens × model. Optimise both, never at the cost of correctness.
+
+- **Inputs**: edit diffs/targeted modules, not whole files; on large context, ask which parts matter before heavy analysis; `/clear` on task switch, `/compact` when a thread bloats.
+- **Output**: concise by default — caveman (§11) is the mechanism; drop filler, keep code/commands/errors exact.
+- **Minimum-viable model**: route mechanical ARCHON work — scraping, summarising, formatting — to cheap inference (OpenRouter / DeepSeek R1, §5); reserve Claude for judgment, system design, compliance logic, high-stakes content.
+- **Scripts over calls**: deterministic scripts do repeatable steps at zero token cost and never hallucinate — score arithmetic lives in the DB + `score-organisation` Edge Function; `graphify update .` is AST-only (§11). AI for judgment, not for what a script can do.
+- **Effort levels**: task may specify low / medium / high; default medium.
+- **Context hygiene**: keep this file a directory (≤ ~200 lines); prune unused MCPs and skills.
