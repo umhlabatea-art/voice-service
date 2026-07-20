@@ -5,8 +5,8 @@
 ---
 
 ## Platform Readiness Score (PRS) Gate
-**Current PRS**: `__/100` — ⚠️ Update before starting Sprint 9  
-**Gate threshold**: ≥ 85 to unlock new sprint
+**Current PRS**: `26/100` — 🔴 CRITICAL band · audited 2026-07-20 (see `prs-audit-2026-07-20.md`)  
+**Gate threshold**: ≥ 85 to unlock new sprint — **Sprint 9 remains GATED**
 
 ---
 
@@ -37,11 +37,15 @@ Objectives:
   3. [TBD]
 
 Open Blockers:
-  - POPIA consent basis unresolved
+  - Umsavati production Supabase project not found in account — locate or rebuild (CRITICAL)
+  - Product source code not under version control
+  - POPIA consent basis unresolved (memo drafted, awaiting CEO decision D1)
   - UTHENGISO graduation criteria unresolved
+  - Archon backend on free tier — re-pauses when idle
 
 HITL Queue:
-  - [none logged]
+  - [pending approval] revoke execute on public.rls_auto_enable() from anon/authenticated (security fix, 1 stmt)
+  - [pending approval] popia_consent_ledger migration (design in templates/legal/POPIA_LAWFUL_BASIS_MEMO.md)
 ```
 
 ---
