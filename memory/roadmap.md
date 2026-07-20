@@ -5,8 +5,9 @@
 ---
 
 ## Platform Readiness Score (PRS) Gate
-**Current PRS**: `26/100` — 🔴 CRITICAL band · audited 2026-07-20 (see `prs-audit-2026-07-20.md`)  
-**Gate threshold**: ≥ 85 to unlock new sprint — **Sprint 9 remains GATED**
+**Current PRS**: `38/100` — 🔴 CRITICAL band · re-scored 2026-07-20 after foundation-schema apply (was 26; see `prs-audit-2026-07-20.md`)  
+**Gate threshold**: ≥ 85 to unlock new sprint — **Sprint 9 remains GATED**  
+**Critical path to 85**: application surface (product code into version control) → monitoring deploys → first scoring Edge Function
 
 ---
 
@@ -37,21 +38,22 @@ Objectives:
   3. [TBD]
 
 Open Blockers:
-  - Umsavati production Supabase project not found in account — locate or rebuild (CRITICAL)
-  - Product source code not under version control
-  - POPIA consent basis unresolved (memo drafted, awaiting CEO decision D1)
+  - Product source code not under version control (DOMINANT — worth up to +22 PRS)
+  - No live monitoring — Uptime Kuma/GlitchTip composes ready, deploy pending (CEO/VPS)
+  - Archon backend on free tier — re-pauses when idle (Kuma monitor doubles as keep-alive)
+  - POPIA memo awaiting attorney review; consent flow not yet wired into ledger
   - UTHENGISO graduation criteria unresolved
-  - Archon backend on free tier — re-pauses when idle
 
 HITL Queue:
-  - [pending approval] apply Umsavati rebuild foundation schema
-    (products/umsavati-ohs/supabase/schema/DRAFT_20260720_umsavati_foundation.sql)
+  - (empty)
 
 HITL Executed (CEO-approved 2026-07-20):
   - ✅ revoke_rls_auto_enable_exposure — security lints cleared
   - ✅ perf_rls_initplan_and_fk_index — performance lints cleared
   - ✅ create_popia_consent_ledger — append-only verified; D1 adopted
     (legitimate-interest structure per templates/legal/POPIA_LAWFUL_BASIS_MEMO.md)
+  - ✅ umsavati_foundation — 8-table rebuild foundation applied & verified
+    (schema/20260720_umsavati_foundation.sql; PRS re-scored 26 → 38)
 ```
 
 ---

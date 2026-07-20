@@ -26,9 +26,9 @@
 ## Pending Infrastructure (Priority Order)
 
 ```
-[ ] 1. Uptime Kuma     — No production alerting. CRITICAL gap.
-[ ] 2. Sentry          — No error tracking. CRITICAL gap.
-[ ] 3. POPIA consent ledger — Legal requirement. HIGH priority.
+[ ] 1. Uptime Kuma     — No production alerting. CRITICAL gap. (compose ready: infra/docker/)
+[ ] 2. GlitchTip       — No error tracking. CRITICAL gap. (Sentry-compatible; compose ready)
+[x] 3. POPIA consent ledger — LIVE 2026-07-20 (append-only, deny-by-default RLS)
 [ ] 4. Decommission Ollama  — Superseded by OpenRouter. Resource freed.
 ```
 

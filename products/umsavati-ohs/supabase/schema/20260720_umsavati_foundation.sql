@@ -1,5 +1,6 @@
 -- ============================================================================
--- DRAFT — NOT APPLIED. HITL approval required before execution (Session Rule 3).
+-- APPLIED 2026-07-20 — CEO HITL approval granted (Session Rule 3 honoured).
+-- Live on lpafkclumhhwsvgxrkwv as migration `umsavati_foundation`.
 -- Umsavati OHS rebuild foundation: minimum schema for the six-dimensional
 -- compliance score engine. Sources: CLAUDE.md §2.2, memory/legislation.md.
 -- Conventions: RLS on every table before any insert; policies use

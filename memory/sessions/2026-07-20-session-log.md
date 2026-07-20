@@ -91,6 +91,23 @@ scoring arithmetic lives in the DB). Every table: RLS-before-insert, initplan po
 | 6 | Bring mobile/web/SafeFile source into version control as it is (re)built | Claude |
 | 7 | PR #1 review + merge (still draft; no CI configured on repo) | CEO |
 
+## 9 · Addendum — foundation schema APPLIED · PRS re-scored 26 → 38
+
+CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Executed:
+
+- Migration `umsavati_foundation` applied to `lpafkclumhhwsvgxrkwv` — all 8 tables live.
+  File renamed `DRAFT_20260720_…` → `20260720_umsavati_foundation.sql` (header marked APPLIED).
+- **Verified**: 11 public tables all RLS-enabled; advisors show zero WARN (INFO only:
+  deny-by-default ledger, fresh unused indexes); 10 policies, 10 triggers, 2 generated
+  columns; band arithmetic proven across all four bands (87.9/72.0/50.0/19.0).
+  Insert-probe deferred — account has 0 auth users, so the `owner_id → auth.users` FK
+  chain gets exercised at first real signup.
+- **PRS re-score: 38/100 — still CRITICAL, Sprint 9 remains GATED.**
+  Data 8→14 · App 3 (unchanged, now dominant gap) · Infra 4→6 · Compliance 5→9 · Revenue 6.
+- Critical path to ≥ 85: product code into version control (+≈22 potential), monitoring
+  deploys, first scoring Edge Function. Full re-score in `prs-audit-2026-07-20.md`.
+- HITL queue is now **empty**; KB updated (roadmap, agents, stack, CLAUDE.md §2.1).
+
 ## Commit trail (this session)
 
 ```

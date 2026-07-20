@@ -35,8 +35,10 @@ Every output must be:
 ### 2.1 Umsavati OHS Platform
 > ⚠️ **TARGET ARCHITECTURE — rebuild in progress.** PRS audit 2026-07-20 confirmed the
 > figures below describe the intended platform, not deployed reality (see
-> `memory/prs-audit-2026-07-20.md`). Rebuild foundation drafted at
-> `products/umsavati-ohs/supabase/schema/`, awaiting HITL to apply.
+> `memory/prs-audit-2026-07-20.md`). Rebuild foundation (8 tables, score engine)
+> **applied 2026-07-20 with CEO HITL approval** — live schema at
+> `products/umsavati-ohs/supabase/schema/20260720_umsavati_foundation.sql`.
+> Next: Edge Functions, mobile/web surfaces, SafeFile pipeline.
 
 - **Mobile**: Expo SDK 52 + Supabase
 - **Database**: 25 tables · 66 RLS policies · 14 triggers · 11 Edge Functions
