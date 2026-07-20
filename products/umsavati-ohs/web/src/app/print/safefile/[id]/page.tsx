@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { ScoreBandChip } from '@/components/score-band';
+import { Button } from '@/components/ui/button';
 import { supabaseServer } from '@/lib/supabase/server';
 import {
   DESIGNATION_LABELS,
@@ -76,7 +77,12 @@ export default async function SafeFilePrintPage({
           <h1 className="font-display text-3xl font-semibold text-navy">Health &amp; Safety File</h1>
           <p className="mt-1 text-steel">{org.name}</p>
         </div>
-        <PrintButton />
+        <div className="flex gap-2 print:hidden">
+          <a href={`/print/safefile/${id}/docx`}>
+            <Button variant="outline">Download Word (.docx)</Button>
+          </a>
+          <PrintButton />
+        </div>
       </div>
 
       <table className="w-full border-collapse">

@@ -5,7 +5,7 @@
 ---
 
 ## Platform Readiness Score (PRS) Gate
-**Current PRS**: `50/100` — 🔴 CRITICAL band · updated 2026-07-20 after ARCHON Command Centre embed (26 → … → 49 → 50; see `prs-audit-2026-07-20.md`)  
+**Current PRS**: `51/100` — 🔴 CRITICAL band · updated 2026-07-20 after SafeFile DOCX export (26 → … → 50 → 51; see `prs-audit-2026-07-20.md`)  
 **Gate threshold**: ≥ 85 to unlock new sprint — **Sprint 9 remains GATED**  
 **Critical path to 85**: application surface (product code into version control) → monitoring deploys → first scoring Edge Function
 

@@ -51,7 +51,7 @@ const PHASES = [
   { n: 1, name: 'Scope', detail: 'Pick the organisation and confirm sector-driven requirements.' },
   { n: 2, name: 'Gather', detail: 'Pull live appointments, SafeFile register, incidents, training.' },
   { n: 3, name: 'Render', detail: 'Assemble the Health & Safety File on the SA legislative template.' },
-  { n: 4, name: 'Export', detail: 'Print-ready document — save as PDF or print for the site file.' },
+  { n: 4, name: 'Export', detail: 'Print-ready document (PDF) or a native Word .docx for the site file.' },
 ] as const;
 
 export default async function SafeFileGeneratorPage() {
@@ -142,11 +142,16 @@ export default async function SafeFileGeneratorPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href={`/print/safefile/${org.id}`} target="_blank">
-                  <Button variant="gold">Generate Health &amp; Safety File</Button>
-                </Link>
+                <div className="flex flex-wrap gap-2">
+                  <Link href={`/print/safefile/${org.id}`} target="_blank">
+                    <Button variant="gold">Generate Health &amp; Safety File</Button>
+                  </Link>
+                  <a href={`/print/safefile/${org.id}/docx`}>
+                    <Button variant="outline">Download Word (.docx)</Button>
+                  </a>
+                </div>
                 <p className="mt-2 text-xs text-steel">
-                  Opens the print-ready document in a new tab. Incomplete modules are
+                  PDF opens in a new tab; Word downloads directly. Incomplete modules are
                   flagged in the file itself — the generator never fabricates evidence.
                 </p>
               </CardContent>
