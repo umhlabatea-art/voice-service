@@ -29,6 +29,16 @@ Appointments · SafeFile Documents · Incidents · Contractors · Training ·
 Physical Agents · SafeFile Generator · ARCHON Command Centre · Settings.
 Remaining module screens land sprint by sprint.
 
+### Working modules
+
+All six score-dimension inputs are user-editable, each mirroring its rubric
+function in `scoring.ts` (display only — the scoring module is the source of
+truth): **Organisations** (CRUD + scan), **Appointments** (Legal 28%),
+**SafeFile Documents** (Documents 22%), **Incidents** (Incident Mgmt 18%),
+**Contractors** (14%), **Training** (10%), **Physical Agents** (8%). The full
+vertical slice runs end-to-end: signup → create organisation → populate the
+six dimensions → run scan → banded score.
+
 ### Organisations module
 
 Full CRUD via React 19 server actions (`useActionState` forms): create with

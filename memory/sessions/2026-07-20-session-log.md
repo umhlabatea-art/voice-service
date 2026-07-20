@@ -179,6 +179,16 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   confirm-guarded remove. Server actions + RLS. Feeds Incident Management (18%).
 - Build + smoke verified. **PRS 46/100** (App 10→11); gate holds.
 
+## 16 · Addendum — Contractors + Training + Physical Agents · PRS 46 → 48
+
+- `/contractors` (14%): qualification average, CIDB + CR 5 badges, toggle-verify,
+  no-contractors=100. `/training` (10%): per-person currency, current/lapsed,
+  non-expiring support, no-records=0. `/physical-agents` (8%): 24-month within-action
+  ratio, stale flag, exceeds/within badges, no-current=50.
+- All mirror their rubric functions (scoring.ts source of truth); server actions + RLS.
+- Completes the scoring-input set — **all six dimensions now user-drivable**. Build +
+  smoke verified across all three. **PRS 48/100** (App 11→13); gate holds.
+
 ## Commit trail (this session)
 
 ```

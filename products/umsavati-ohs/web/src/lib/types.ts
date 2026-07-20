@@ -123,6 +123,55 @@ export interface Appointment {
   created_at: string;
 }
 
+export interface Contractor {
+  id: string;
+  organisation_id: string;
+  name: string;
+  cidb_grade: number | null;
+  cr5_competency_verified: boolean;
+  created_at: string;
+}
+
+export interface TrainingRecord {
+  id: string;
+  organisation_id: string;
+  person_name: string;
+  course: string;
+  completed_at: string;
+  valid_until: string | null;
+  created_at: string;
+}
+
+export const PHYSICAL_AGENTS = [
+  'noise',
+  'vibration_hand_arm',
+  'vibration_whole_body',
+  'thermal',
+  'em_radiation',
+  'optical_radiation',
+] as const;
+export type PhysicalAgent = (typeof PHYSICAL_AGENTS)[number];
+
+export const PHYSICAL_AGENT_LABELS: Record<PhysicalAgent, string> = {
+  noise: 'Noise',
+  vibration_hand_arm: 'Vibration (hand-arm)',
+  vibration_whole_body: 'Vibration (whole-body)',
+  thermal: 'Thermal',
+  em_radiation: 'EM Radiation',
+  optical_radiation: 'Optical Radiation',
+};
+
+export interface PhysicalAgentReading {
+  id: string;
+  organisation_id: string;
+  agent: PhysicalAgent;
+  reading: number;
+  unit: string;
+  exceeds_action_level: boolean;
+  measured_at: string;
+  created_at: string;
+}
+
 export interface ComplianceScore {
   id: string;
   organisation_id: string;
