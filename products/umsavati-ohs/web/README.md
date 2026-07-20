@@ -24,10 +24,21 @@ No hex values appear anywhere outside `globals.css`.
 ## Pages (11 — CLAUDE.md §2.1)
 
 Dashboard (live score card + six dimension tiles, reads
-`compliance_scores` server-side) · Organisations · Appointments ·
-SafeFile Documents · Incidents · Contractors · Training · Physical Agents ·
-SafeFile Generator · ARCHON Command Centre · Settings.
-All routes exist and render; module screens land sprint by sprint.
+`compliance_scores` server-side) · **Organisations (working module)** ·
+Appointments · SafeFile Documents · Incidents · Contractors · Training ·
+Physical Agents · SafeFile Generator · ARCHON Command Centre · Settings.
+Remaining module screens land sprint by sprint.
+
+### Organisations module
+
+Full CRUD via React 19 server actions (`useActionState` forms): create with
+sector/CIDB/COID validation, edit, confirm-guarded delete (cascades by
+schema). The detail page runs the end-to-end scoring loop: **Run compliance
+scan** invokes the `score-organisation` Edge Function server-side with the
+caller's session (no CORS surface), then renders the returned score, the six
+dimension tiles, and the immutable score history. All reads/writes go through
+the user's own client — RLS is the authorisation layer, `owner_id` is set to
+the signed-in user on insert.
 
 The dashboard **displays** `total` and `band` from the database — scoring
 arithmetic lives in the DB generated columns and the `score-organisation`

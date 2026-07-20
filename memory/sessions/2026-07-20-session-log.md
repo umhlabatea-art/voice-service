@@ -141,6 +141,17 @@ CEO gave HITL approval ("apply the foundation schema and re-run the PRS"). Execu
   (graceful "not connected" states).
 - **PRS 42/100** (App 5→7) — CRITICAL; gate holds.
 
+## 12 · Addendum — Organisations module (first working CRUD) · PRS 42 → 43
+
+- `/organisations` list + create; `/organisations/[id]` detail with edit,
+  confirm-guarded delete (schema cascades), and **Run compliance scan** — invokes
+  `score-organisation` via server action with the user's session (server-to-server,
+  no CORS surface), renders returned total/band, six dimension tiles, immutable history.
+- React 19 `useActionState` forms; validation in the server action (sector enum,
+  CIDB 1–9); `owner_id` set from the signed-in user; RLS is the authorisation layer.
+- Fixed: detail page 500 on bare checkout → clean 404 via env guard. Build + smoke
+  re-verified. **PRS 43/100** (App 7→8); gate holds. E2E pends first auth user.
+
 ## Commit trail (this session)
 
 ```
