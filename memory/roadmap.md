@@ -39,7 +39,8 @@ Objectives:
 
 Open Blockers:
   - Product source code not under version control (DOMINANT — worth up to +22 PRS)
-  - No live monitoring — Uptime Kuma/GlitchTip composes ready, deploy pending (CEO/VPS)
+  - No live monitoring — Uptime Kuma/GlitchTip composes validated + runbook ready
+    (infra/docker/README.md); Coolify deploy pending (CEO/VPS). +10 PRS on deploy.
   - Archon backend on free tier — re-pauses when idle (Kuma monitor doubles as keep-alive)
   - POPIA memo awaiting attorney review; consent flow not yet wired into ledger
   - UTHENGISO graduation criteria unresolved
