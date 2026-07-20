@@ -1,0 +1,84 @@
+# GlitchTip — Sentry-compatible error tracking, sized for the KVM2 VPS
+# Self-hosted Sentry proper needs ~16 GB RAM; GlitchTip speaks the same SDK
+# protocol (sentry-sdk / @sentry/*) at a fraction of the footprint, keeping
+# the Contraband Stack principle intact.
+# Deploy via Coolify: New Resource → Docker Compose → paste this file.
+# Set SECRET_KEY (openssl rand -hex 32) and GLITCHTIP_DOMAIN in Coolify env.
+# DSNs from GlitchTip drop into Expo (sentry-expo), Next.js (@sentry/nextjs),
+# and the Deno Edge Functions (sentry SDK for Deno).
+
+x-environment: &default-env
+  DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@glitchtip-db:5432/postgres
+  SECRET_KEY: ${SECRET_KEY}
+  REDIS_URL: redis://glitchtip-redis:6379/0
+  GLITCHTIP_DOMAIN: ${GLITCHTIP_DOMAIN:-http://localhost:8080}
+  EMAIL_URL: ${EMAIL_URL:-consolemail://}
+  ENABLE_USER_REGISTRATION: "false"
+
+services:
+  glitchtip-db:
+    image: postgres:17-alpine
+    container_name: glitchtip-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - glitchtip-pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  glitchtip-redis:
+    image: redis:7-alpine
+    container_name: glitchtip-redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  glitchtip-web:
+    image: glitchtip/glitchtip:latest
+    container_name: glitchtip-web
+    restart: unless-stopped
+    depends_on:
+      glitchtip-db:
+        condition: service_healthy
+      glitchtip-redis:
+        condition: service_healthy
+    environment: *default-env
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://localhost:8080/_health/ || exit 1"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+
+  glitchtip-worker:
+    image: glitchtip/glitchtip:latest
+    container_name: glitchtip-worker
+    restart: unless-stopped
+    command: ./bin/run-celery-with-beat.sh
+    depends_on:
+      glitchtip-db:
+        condition: service_healthy
+      glitchtip-redis:
+        condition: service_healthy
+    environment: *default-env
+
+  glitchtip-migrate:
+    image: glitchtip/glitchtip:latest
+    container_name: glitchtip-migrate
+    restart: "no"
+    command: ./bin/run-migrate.sh
+    depends_on:
+      glitchtip-db:
+        condition: service_healthy
+    environment: *default-env
+
+volumes:
+  glitchtip-pg:
